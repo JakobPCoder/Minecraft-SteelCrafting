@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SS",
+    "ST",
+    " T"
+  ],
+  "key": {
+    "S": "steelcrafting:steel_ingot",
+    "T": "minecraft:stick"
+  },
+  "result": {
+    "id": "steelcrafting:steel_axe",
+    "count": 1
+  }
+} 

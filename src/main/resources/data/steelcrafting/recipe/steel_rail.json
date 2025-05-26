@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "S S",
+    "SIS",
+    "S S"
+  ],
+  "key": {
+    "S": "steelcrafting:steel_ingot",
+    "I": "#minecraft:logs"
+  },
+  "result": {
+    "id": "minecraft:rail",
+    "count": 24
+  }
+} 

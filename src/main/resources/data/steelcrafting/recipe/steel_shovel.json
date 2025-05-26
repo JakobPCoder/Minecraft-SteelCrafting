@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " S ",
+    " T ",
+    " T "
+  ],
+  "key": {
+    "S": "steelcrafting:steel_ingot",
+    "T": "minecraft:stick"
+  },
+  "result": {
+    "id": "steelcrafting:steel_shovel",
+    "count": 1
+  }
+} 
