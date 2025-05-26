@@ -47,7 +47,7 @@ Obtain by blasting iron ingots in a blast furnace for a long time.
   Craft **24 rails** using **steel ingots** and **logs**.
   The vanilla recipe using sticks and iron creates 16 rails.
 
-  ![Steel Rails Recipe](images/crafting_rails.png)
+![Steel Rails Recipe](images/crafting_rails.png)
 
 
 ## Installation
