@@ -9,7 +9,10 @@
 ### Steel Ingot
 Steel ingots are the base material for all steel tools and armor.
 Obtain by blasting iron ingots in a blast furnace for a long time.
+
+
 ![Steel Ingot Recipe](images/blasting_steel.png)
+
 
 ## Tools
 
@@ -21,7 +24,9 @@ Obtain by blasting iron ingots in a blast furnace for a long time.
 - **Steel Shovel**  
 - **Steel Hoe**  
 
+
 ![Steel Tool Recipe](images/crafting_axe.png)
+
 
 ## Armor
 
@@ -32,14 +37,18 @@ Obtain by blasting iron ingots in a blast furnace for a long time.
 - **Steel Leggings**  
 - **Steel Boots**  
 
+
 ![Steel Armor Recipe](images/crafting_chesplate.png)
+
 
 ## Other Recipes
 
 - **Steel Rail Crafting**  
   Craft **24 rails** using **steel ingots** and **logs**.
   The vanilla recipe using sticks and iron creates 16 rails.
+
   ![Steel Rails Recipe](images/crafting_rails.png)
+
 
 ## Installation
 
