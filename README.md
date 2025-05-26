@@ -7,11 +7,11 @@
 ## Items
 
 ### Steel Ingot
-Steel ingots are the base material for all steel tools and armor.
-Obtain by blasting iron ingots in a blast furnace for a long time.
-
 
 ![Steel Ingot Recipe](images/blasting_steel.png)
+
+Steel ingots are the base material for all steel tools and armor.
+Obtain by blasting iron ingots in a blast furnace for a long time. 
 
 
 ## Tools
