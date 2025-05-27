@@ -10,18 +10,16 @@ import net.minecraft.util.Identifier;
 
 import java.util.function.Function;
 
-
 /**
- * Class responsible for registering all mod items.
- * This includes the steel ingot and steel tools.
+ * Handles registration and creative tab assignment for all SteelCrafting mod items.
  */
 public class ModItems {
-    
+
     /**
-     * Registers a basic item in Fabric 1.21.4, storing the registry key in settings.
+     * Registers an item with the given name, factory, and settings.
      *
-     * @param name    Path part of the identifier
-     * @param factory Function to create the item from settings
+     * @param name     Path part of the identifier (e.g., "steel_ingot")
+     * @param factory  Function to create the item from settings
      * @param settings Item settings
      * @return The registered Item
      */
@@ -31,115 +29,89 @@ public class ModItems {
         return Items.register(key, factory, settings);
     }
 
-
-    /**
-     * Steel Ingot item instance.
-     */
+    // Steel Ingot item
     public static final Item STEEL_INGOT = registerItem(
         "steel_ingot",
         Item::new,
         new Item.Settings()
     );
 
-    /**
-     * Steel Sword item instance.
-     */
+    // Steel Sword item
     public static final Item STEEL_SWORD = registerItem(
         "steel_sword",
         settings -> new SwordItem(SteelToolMaterial.STEEL, 3, -2.4F, settings),
         new Item.Settings()
     );
 
-    /**
-     * Steel Pickaxe item instance.
-     */
+    // Steel Pickaxe item
     public static final Item STEEL_PICKAXE = registerItem(
         "steel_pickaxe",
         settings -> new PickaxeItem(SteelToolMaterial.STEEL, 1, -2.8F, settings),
         new Item.Settings()
     );
 
-    /**
-     * Steel Axe item instance.
-     */
+    // Steel Axe item
     public static final Item STEEL_AXE = registerItem(
         "steel_axe",
         settings -> new AxeItem(SteelToolMaterial.STEEL, 6.0F, -3.1F, settings),
         new Item.Settings()
     );
 
-    /**
-     * Steel Shovel item instance.
-     */
+    // Steel Shovel item
     public static final Item STEEL_SHOVEL = registerItem(
         "steel_shovel",
         settings -> new ShovelItem(SteelToolMaterial.STEEL, 1.5F, -3.0F, settings),
         new Item.Settings()
     );
 
-    /**
-     * Steel Hoe item instance.
-     */
+    // Steel Hoe item
     public static final Item STEEL_HOE = registerItem(
         "steel_hoe",
         settings -> new HoeItem(SteelToolMaterial.STEEL, -2, -1.0F, settings),
         new Item.Settings()
     );
 
-    /**
-     * Steel Helmet item instance.
-     * Uses iron armor material as base with custom durability.
-     */
+    // Steel Helmet item (uses custom steel armor material)
     public static final Item STEEL_HELMET = registerItem(
         "steel_helmet",
-        settings -> new ArmorItem(ArmorMaterials.IRON, EquipmentType.HELMET, settings),
-        new Item.Settings().maxDamage(363)  // Diamond helmet durability
+        settings -> new ArmorItem(SteelArmorMaterial.INSTANCE, EquipmentType.HELMET, settings),
+        new Item.Settings().maxDamage(EquipmentType.HELMET.getMaxDamage(SteelArmorMaterial.BASE_DURABILITY))
     );
 
-    /**
-     * Steel Chestplate item instance.
-     * Uses iron armor material as base with custom durability.
-     */
+    // Steel Chestplate item (uses custom steel armor material)
     public static final Item STEEL_CHESTPLATE = registerItem(
         "steel_chestplate",
-        settings -> new ArmorItem(ArmorMaterials.IRON, EquipmentType.CHESTPLATE, settings),
-        new Item.Settings().maxDamage(528)  // Diamond chestplate durability
+        settings -> new ArmorItem(SteelArmorMaterial.INSTANCE, EquipmentType.CHESTPLATE, settings),
+        new Item.Settings().maxDamage(EquipmentType.CHESTPLATE.getMaxDamage(SteelArmorMaterial.BASE_DURABILITY))
     );
 
-    /**
-     * Steel Leggings item instance.
-     * Uses iron armor material as base with custom durability.
-     */
+    // Steel Leggings item (uses custom steel armor material)
     public static final Item STEEL_LEGGINGS = registerItem(
         "steel_leggings",
-        settings -> new ArmorItem(ArmorMaterials.IRON, EquipmentType.LEGGINGS, settings),
-        new Item.Settings().maxDamage(495)  // Diamond leggings durability
+        settings -> new ArmorItem(SteelArmorMaterial.INSTANCE, EquipmentType.LEGGINGS, settings),
+        new Item.Settings().maxDamage(EquipmentType.LEGGINGS.getMaxDamage(SteelArmorMaterial.BASE_DURABILITY))
     );
 
-    /**
-     * Steel Boots item instance.
-     * Uses iron armor material as base with custom durability.
-     */
+    // Steel Boots item (uses custom steel armor material)
     public static final Item STEEL_BOOTS = registerItem(
         "steel_boots",
-        settings -> new ArmorItem(ArmorMaterials.IRON, EquipmentType.BOOTS, settings),
-        new Item.Settings().maxDamage(429)  // Diamond boots durability
+        settings -> new ArmorItem(SteelArmorMaterial.INSTANCE, EquipmentType.BOOTS, settings),
+        new Item.Settings().maxDamage(EquipmentType.BOOTS.getMaxDamage(SteelArmorMaterial.BASE_DURABILITY))
     );
-    
 
     /**
-     * Adds all mod items to creative tabs.
-     * This method should be called during mod initialization.
+     * Registers all mod items to their respective creative tabs.
+     * Should be called during mod initialization.
      */
     public static void registerModItems() {
         SteelCrafting.LOGGER.info("Adding Mod Items to creative tabs for " + SteelCrafting.MOD_ID);
-        
-        // Add steel ingot to ingredients tab
+
+        // Add steel ingot to the Ingredients tab
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(STEEL_INGOT);
         });
-        
-        // Add steel tools to combat tab
+
+        // Add steel sword, axe, and armor to the Combat tab
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
             entries.add(STEEL_SWORD);
             entries.add(STEEL_AXE);
@@ -148,8 +120,8 @@ public class ModItems {
             entries.add(STEEL_LEGGINGS);
             entries.add(STEEL_BOOTS);
         });
-        
-        // Add steel tools to tools tab
+
+        // Add steel tools to the Tools tab
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {
             entries.add(STEEL_PICKAXE);
             entries.add(STEEL_AXE);

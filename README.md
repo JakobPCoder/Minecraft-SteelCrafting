@@ -52,6 +52,8 @@ Obtain by blasting iron ingots in a blast furnace for a long time.
 
 ## Installation
 
+The compiled mod JAR can be found in the `build/libs/` directory of this repository after running the build task.
+
 1. Download the mod version you need for your minecraft version.
 2. Ensure you have the matching verison of the fabric installed and have a profile for it.
 3. Place the JAR into the `mods` folder of your Minecraft instance.  
