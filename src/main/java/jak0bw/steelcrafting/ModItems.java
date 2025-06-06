@@ -70,6 +70,13 @@ public class ModItems {
         new Item.Settings()
     );
 
+    // Steel Flint and Steel item
+    public static final Item STEEL_FLINT_AND_STEEL = registerItem(
+        "steel_flint_and_steel",
+        FlintAndSteelItem::new,
+        new Item.Settings().maxDamage(256)
+    );
+
     // Steel Helmet item (uses custom steel armor material)
     public static final Item STEEL_HELMET = registerItem(
         "steel_helmet",
@@ -126,6 +133,7 @@ public class ModItems {
             entries.add(STEEL_AXE);
             entries.add(STEEL_SHOVEL);
             entries.add(STEEL_HOE);
+            entries.add(STEEL_FLINT_AND_STEEL);
         });
     }
 } 
