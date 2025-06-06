@@ -50,8 +50,7 @@ Obtain by blasting iron ingots in a blast furnace for a long time.
 ![Steel Rails Recipe](images/crafting_rails.png)
 
 - **Bucket Crafting**  
-  Craft a **steel bucket** using three **steel ingots** in the same pattern as the vanilla bucket recipe.  
-  Functions identically to a vanilla bucket, but crafted from steel.
+  Craft two **buckets** using three **steel ingots** in the same pattern as the vanilla bucket recipe.  
 
 - **Improved Flint and Steel**  
   Craft a **Flint and Steel** using **flint** and a **steel ingot** (flint above steel ingot).  
