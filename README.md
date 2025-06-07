@@ -43,11 +43,6 @@ Obtain by blasting iron ingots in a blast furnace for a long time.
 
 ## Other Recipes
 
-- **Rail Crafting**  
-  Craft **24 rails** using **steel ingots** and **logs**.
-  The vanilla recipe using sticks and iron creates 16 rails.
-
-![Steel Rails Recipe](images/crafting_rails.png)
 
 - **Bucket Crafting**  
   Craft two **buckets** using three **steel ingots** in the same pattern as the vanilla bucket recipe.  
@@ -55,6 +50,12 @@ Obtain by blasting iron ingots in a blast furnace for a long time.
 - **Improved Flint and Steel**  
   Craft a **Flint and Steel** using **flint** and a **steel ingot** (flint above steel ingot).  
   This tool works like the vanilla flint and steel, but has **4x the durability (256 uses)**.
+  
+- **Rail Crafting**  
+  Craft **24 rails** using **steel ingots** and **logs**.
+  The vanilla recipe using sticks and iron creates 16 rails.
+
+![Steel Rails Recipe](images/crafting_rails.png)
 
 
 ## Installation
