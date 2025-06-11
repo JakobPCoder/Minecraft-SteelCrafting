@@ -8,6 +8,15 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 
 import java.util.function.Function;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.component.DataComponentTypes;
+import net.minecraft.component.type.ToolComponent;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.RegistryEntryLookup;
+import net.minecraft.registry.entry.RegistryEntryList;
+import net.minecraft.registry.tag.BlockTags;
+import java.util.List;
 
 /**
  * Handles registration and creative tab assignment for all SteelCrafting mod items.
@@ -136,4 +145,5 @@ public class ModItems {
             entries.add(STEEL_FLINT_AND_STEEL);
         });
     }
+
 } 
