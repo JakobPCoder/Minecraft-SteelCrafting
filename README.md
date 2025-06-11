@@ -23,7 +23,6 @@ Obtain by blasting iron ingots in a blast furnace for a long time.
 - **Steel Axe**  
 - **Steel Shovel**  
 - **Steel Hoe**  
-- **Steel Shears**
 
 
 ![Steel Tool Recipe](images/crafting_axe.png)
@@ -63,12 +62,6 @@ Obtain by blasting iron ingots in a blast furnace for a long time.
 - **Rail Crafting**  
   Craft **24 rails** using **steel ingots** and **logs**.
   The vanilla recipe using sticks and iron creates 16 rails.
-
-![Steel Rails Recipe](images/crafting_rails.png)
-
-- **Steel Shears**  
-  Craft **Steel Shears** using two **steel ingots** in the same pattern as vanilla shears.  
-  These shears have **double the durability** and shear blocks/entities **faster** than vanilla shears.
 
 ## Installation
 
