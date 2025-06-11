@@ -2,6 +2,8 @@
 
 [LICENSE](LICENSE.md)
 
+[CurseForge](https://www.curseforge.com/minecraft/mc-mods/steelcrafting) Direct download of the jar.
+
 **SteelCrafting** is a Fabric mod that adds steel tools and armor, crafted from steel ingots obtained by blasting iron ingots.
 
 ## Items
