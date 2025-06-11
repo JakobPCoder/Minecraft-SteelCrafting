@@ -154,6 +154,7 @@ public class ModItems {
         // Add steel block to the Building Blocks tab
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
             entries.add(ModBlocks.STEEL_BLOCK);
+            entries.add(ModBlocks.STEEL_PRESSURE_PLATE);
         });
     }
 
