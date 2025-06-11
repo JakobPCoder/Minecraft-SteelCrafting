@@ -41,6 +41,14 @@ Obtain by blasting iron ingots in a blast furnace for a long time.
 
 ![Steel Armor Recipe](images/crafting_chesplate.png)
 
+## Blocks
+
+- **Steel Block**  
+  A decorative and building block crafted from nine steel ingots.
+
+- **Steel Pressure Plate**  
+  A heavy weighted pressure plate that provides a redstone output for each 16 entities, offering redstone control more in line with powers of two than the vanilla weighted pressure plates.
+
 
 ## Other Recipes
 

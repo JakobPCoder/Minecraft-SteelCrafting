@@ -17,6 +17,7 @@ import net.minecraft.registry.RegistryEntryLookup;
 import net.minecraft.registry.entry.RegistryEntryList;
 import net.minecraft.registry.tag.BlockTags;
 import java.util.List;
+import net.minecraft.item.ItemGroups;
 
 /**
  * Handles registration and creative tab assignment for all SteelCrafting mod items.
@@ -143,6 +144,16 @@ public class ModItems {
             entries.add(STEEL_SHOVEL);
             entries.add(STEEL_HOE);
             entries.add(STEEL_FLINT_AND_STEEL);
+        });
+
+        // Add steel pressure plate to the Redstone Blocks tab
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE).register(entries -> {
+            entries.add(ModBlocks.STEEL_PRESSURE_PLATE);
+        });
+        
+        // Add steel block to the Building Blocks tab
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
+            entries.add(ModBlocks.STEEL_BLOCK);
         });
     }
 

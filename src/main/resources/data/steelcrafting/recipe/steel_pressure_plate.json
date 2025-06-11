@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": "steelcrafting:steel_ingot"
+  },
+  "result": {
+    "id": "steelcrafting:steel_pressure_plate"
+  }
+} 

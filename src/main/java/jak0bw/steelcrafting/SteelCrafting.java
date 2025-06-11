@@ -24,5 +24,7 @@ public class SteelCrafting implements ModInitializer {
 		LOGGER.info("Hello Fabric world!");
 		// Register all SteelCrafting mod items
 		ModItems.registerModItems();
+		// Register all SteelCrafting mod blocks
+		ModBlocks.registerModBlocks();
 	}
 }
