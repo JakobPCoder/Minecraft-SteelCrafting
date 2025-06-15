@@ -42,7 +42,7 @@ public class SteelArmorMaterial {
             EquipmentType.LEGGINGS, 5,
             EquipmentType.BOOTS, 2
         ),
-        14, // Enchantability (iron)
+        9, // Enchantability (iron)
         SoundEvents.ITEM_ARMOR_EQUIP_IRON,
         0.0F, // Toughness (iron)
         0.0F, // Knockback resistance (iron)
