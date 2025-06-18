@@ -24,7 +24,7 @@ public class SteelArmorMaterial {
     /**
      * Tag for steel ingots, used for repairing steel armor.
      */
-    public static final TagKey<Item> STEEL_INGOTS = TagKey.of(net.minecraft.registry.RegistryKeys.ITEM, Identifier.of("steelcrafting", "steel_ingots"));
+    public static final TagKey<Item> REPAIRS_STEEL_ARMOR = TagKey.of(net.minecraft.registry.RegistryKeys.ITEM, Identifier.of("steelcrafting", "repairs_steel_armor"));
 
     /**
      * Registry key for the steel armor material asset.
@@ -46,7 +46,7 @@ public class SteelArmorMaterial {
         SoundEvents.ITEM_ARMOR_EQUIP_IRON,
         0.0F, // Toughness (iron)
         0.0F, // Knockback resistance (iron)
-        STEEL_INGOTS,
+        REPAIRS_STEEL_ARMOR,
         STEEL_ARMOR_MATERIAL_KEY
     );
 

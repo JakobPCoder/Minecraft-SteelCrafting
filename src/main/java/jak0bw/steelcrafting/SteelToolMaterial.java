@@ -13,7 +13,8 @@ import net.minecraft.registry.RegistryKeys;
  */
 public class SteelToolMaterial {
     // Custom tag for steel ingots, used for repairing steel tools and armor
-    public static final TagKey<Item> STEEL_INGOTS = TagKey.of(RegistryKeys.ITEM, Identifier.of("steelcrafting", "steel_ingots"));
+    public static final TagKey<Item> REPAIRS_STEEL_TOOL = TagKey.of(RegistryKeys.ITEM, Identifier.of("steelcrafting", "repairs_steel_tool"));
+
 
     /**
      * Steel tool material with diamond durability but iron speed and attack damage.
@@ -25,6 +26,6 @@ public class SteelToolMaterial {
         6.0F,   // Iron mining speed
         2.0F,   // Iron attack damage bonus
         14,     // Enchantability like iron
-        STEEL_INGOTS  // Use steel ingots for repair
+        REPAIRS_STEEL_TOOL  // Use steel ingots for repair
     );
 } 
