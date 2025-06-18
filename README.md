@@ -65,6 +65,10 @@ Obtain by blasting iron ingots in a blast furnace for a long time.
   Craft **24 rails** using **steel ingots** and **logs**.
   The vanilla recipe using sticks and iron creates 16 rails.
 
+## Repairing Steel Tools and Armor
+
+Steel tools and armor can be repaired using steel ingots. The repair mechanics are integrated with vanilla methods, allowing for repairs in an anvil or through crafting. This is enabled by custom item tags `repairs_steel_tool` and `repairs_steel_armor`.
+
 ## Installation
 
 The compiled mod JAR can be found in the `build/libs/` directory of this repository after running the build task.
