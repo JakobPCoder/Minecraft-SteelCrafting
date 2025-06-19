@@ -8,23 +8,51 @@
 
 ## Items
 
-### Steel Ingot
+### **Steel Ingot**
 
 ![Steel Ingot Recipe](images/blasting_steel.png)
 
-Steel ingots are the base material for all steel tools and armor.
+**Steel ingots** are the base material for all steel tools and armor.
 Obtain by blasting iron ingots in a blast furnace for a long time. 
+
+
+### **Improved Flint and Steel**  
+Craft a **Flint and Steel** using **flint** and a **steel ingot** (flint above steel ingot).  
+This tool works like the vanilla flint and steel, but has **4x the durability (256 uses)**.
+
+
+## Blocks
+
+### **Steel Block**  
+A decorative and building block crafted from nine steel ingots.
+
+### **Heavy Counting Pressure Plate**  
+
+  This pressure plate is a bit different from the vanilla pressure plate, as it **counts each item** on it, not each entity.
+  This means items in stacks are correctly counted.
+
+  > Outputs **one** redstone signal for each **16 items**/entity on the pressure plate.
 
 
 ## Tools
 
-**Steel tools** are as strong and **as fast as iron tools** but have the **durability of diamond.**
+**Steel tools** can mine the same things and have the same mining speed as **iron** tools.
 
-- **Steel Sword**  
-- **Steel Pickaxe**  
-- **Steel Axe**  
-- **Steel Shovel**  
-- **Steel Hoe**  
+**Steel tools** are **4 times** as durable as iron tools, which is about 2/3 of diamond tools.
+
+**Steel tools** sit between iron and diamond tools in terms of enchantability.
+
+
+| Material   | Durability | Mining Speed | Damage Bonus | Enchantability |
+|------------|------------|--------------|---------------------|----------------|
+| Gold       | 32         | 12.0         | 0.0                 | 22             |
+| Wood       | 59         | 2.0          | 0.0                 | 15             |
+| Stone      | 131        | 4.0          | 1.0                 | 5              |
+| Iron       | 250        | 6.0          | 2.0                 | 14             |
+| **Steel**  | **1000**   | **6.0**      | **2.0**             | **12**         |
+| Diamond    | 1561       | 8.0          | 3.0                 | 10             |
+
+
 
 
 ![Steel Tool Recipe](images/crafting_axe.png)
@@ -32,40 +60,35 @@ Obtain by blasting iron ingots in a blast furnace for a long time.
 
 ## Armor
 
-**Steel armor** offers the same **protection as iron armor** but has the **durability of diamond.**
+**Steel armor** offers the same **protection as iron armor**.
 
-- **Steel Helmet**  
-- **Steel Chestplate**  
-- **Steel Leggings**  
-- **Steel Boots**  
+**Steel armor** has **twice** the durability iron, which is slightly less than diamond.
 
+**Steel armor** have the same enchantability as diamond.
+ 
+
+### ***Protection, Durability, Enchantability***
+
+| Material  | Head | Chest | Legs | Feet | Total | Durability | Enchantability |
+|-----------|------|-------|------|------|-------|------------|----------------|
+| Leather   | 1    | 3     | 2    | 1    | 7     | 5          | 15             |
+| Gold      | 2    | 5     | 3    | 1    | 11    | 7          | 25             |
+| Iron      | 2    | 6     | 5    | 2    | 15    | 15         | 9              |
+| **Steel** | **2**| **6** | **5**| **2**|**15** | **30**     | **10**         |
+| Diamond   | 3    | 8     | 6    | 3    | 20    | 33         | 10             |
 
 ![Steel Armor Recipe](images/crafting_chesplate.png)
-
-## Blocks
-
-- **Steel Block**  
-  A decorative and building block crafted from nine steel ingots.
-
-- **Steel Pressure Plate**  
-  Heavy counting pressure plate.
-  Different from the vanilla weighted pressure plate, counting pressure plates do not only count the number of entities, but actually counts the number of items that are dropped on the pressure plate. This is way more useful for redstone control. This one actives one redstone signal per 16 items. Sarting with a signal at 16 items, not 1 like the vanilla weighted pressure plate.
- +For a light counting pressure plate, you can soon use my CopperCrafting mod, which will include a counting pressure plate, that counts each item individually.*
-
 
 ## Other Recipes
 
 
 - **Bucket Crafting**  
-  Craft two **buckets** using three **steel ingots** in the same pattern as the vanilla bucket recipe.  
+Craft two **buckets** using three **steel ingots** in the same pattern as the vanilla bucket recipe.  
 
-- **Improved Flint and Steel**  
-  Craft a **Flint and Steel** using **flint** and a **steel ingot** (flint above steel ingot).  
-  This tool works like the vanilla flint and steel, but has **4x the durability (256 uses)**.
   
 - **Rail Crafting**  
-  Craft **24 rails** using **steel ingots** and **logs**.
-  The vanilla recipe using sticks and iron creates 16 rails.
+Craft **24 rails** using **steel ingots** and **logs**.
+The vanilla recipe using sticks and iron creates 16 rails.
 
 ## Repairing Steel Tools and Armor
 

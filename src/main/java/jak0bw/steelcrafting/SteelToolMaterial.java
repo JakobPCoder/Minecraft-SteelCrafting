@@ -22,10 +22,10 @@ public class SteelToolMaterial {
      */
     public static final ToolMaterial STEEL = new ToolMaterial(
         BlockTags.INCORRECT_FOR_IRON_TOOL,  // Same mining level as iron
-        1561,   // Diamond durability
+        1000,   // Durability between iron and diamond
         6.0F,   // Iron mining speed
         2.0F,   // Iron attack damage bonus
-        14,     // Enchantability like iron
+        12,     // Enchantability like iron
         REPAIRS_STEEL_TOOL  // Use steel ingots for repair
     );
 } 

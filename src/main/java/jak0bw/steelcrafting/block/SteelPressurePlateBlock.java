@@ -12,6 +12,8 @@ import net.minecraft.world.World;
 import java.util.List;
 
 public class SteelPressurePlateBlock extends WeightedPressurePlateBlock {
+    protected static final Box BOX_BIG = new Box(0.0, 0.0, 0.0, 1.0, 0.25, 1.0);
+
     public SteelPressurePlateBlock(AbstractBlock.Settings settings) {
         super(240, BlockSetType.IRON, settings);
     }
@@ -19,7 +21,7 @@ public class SteelPressurePlateBlock extends WeightedPressurePlateBlock {
     @Override
     protected int getRedstoneOutput(World world, BlockPos pos) {
         // Get the bounding box used by the vanilla pressure plate
-        Box box = BOX.offset(pos);
+        Box box = BOX_BIG.offset(pos);
         // Get all entities in the box (like vanilla, but we will process them differently later)
         List<Entity> entities = world.getEntitiesByClass(Entity.class, box, EntityPredicates.EXCEPT_SPECTATOR.and(entity -> !entity.canAvoidTraps()));
 
@@ -33,6 +35,6 @@ public class SteelPressurePlateBlock extends WeightedPressurePlateBlock {
                 total += 1;
             }
         }
-        return total / 16;
+        return Math.min(15, total / 16);
     }
 } 

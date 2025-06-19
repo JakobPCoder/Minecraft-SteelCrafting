@@ -19,7 +19,7 @@ public class SteelArmorMaterial {
     /**
      * Base durability multiplier for steel armor (same as iron).
      */
-    public static final int BASE_DURABILITY = 33;
+    public static final int BASE_DURABILITY = 30;
 
     /**
      * Tag for steel ingots, used for repairing steel armor.
@@ -42,7 +42,7 @@ public class SteelArmorMaterial {
             EquipmentType.LEGGINGS, 5,
             EquipmentType.BOOTS, 2
         ),
-        9, // Enchantability (iron)
+        12, // Enchantability a bit higher than iron and diamond
         SoundEvents.ITEM_ARMOR_EQUIP_IRON,
         0.0F, // Toughness (iron)
         0.0F, // Knockback resistance (iron)
