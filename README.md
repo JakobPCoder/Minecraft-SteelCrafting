@@ -48,7 +48,11 @@ Obtain by blasting iron ingots in a blast furnace for a long time.
   A decorative and building block crafted from nine steel ingots.
 
 - **Steel Pressure Plate**  
-  A heavy weighted pressure plate that provides a redstone output for each 16 entities, offering redstone control more in line with powers of two than the vanilla weighted pressure plates.
+  Heavy counting pressure plate.
+  Different from the vanilla weighted pressure plate, counting pressure plates do not only count the number of entities, but actually counts the number of items that are dropped on the pressure plate. This is way more useful for redstone control. This one actives one redstone signal per 16 items. Sarting with a signal at 16 items, not 1 like the vanilla weighted pressure plate.
+ +For a light counting pressure plate, you can soon use my CopperCrafting mod, which will include a counting pressure plate, that counts each item individually.*
+ 
+  ![Steel Pressure Plate Recipe](images/crafting_pressure_plate.png)
 
 
 ## Other Recipes
