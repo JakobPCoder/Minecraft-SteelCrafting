@@ -81,18 +81,14 @@ A decorative and building block crafted from nine steel ingots.
 
 ## Other Recipes
 
-
-- **Bucket Crafting**  
+### **Bucket Crafting**  
 Craft two **buckets** using three **steel ingots** in the same pattern as the vanilla bucket recipe.  
 
   
-- **Rail Crafting**  
+### **Rail Crafting**  
 Craft **24 rails** using **steel ingots** and **logs**.
 The vanilla recipe using sticks and iron creates 16 rails.
 
-## Repairing Steel Tools and Armor
-
-Steel tools and armor can be repaired using steel ingots. The repair mechanics are integrated with vanilla methods, allowing for repairs in an anvil or through crafting. This is enabled by custom item tags `repairs_steel_tool` and `repairs_steel_armor`.
 
 ## Installation
 
